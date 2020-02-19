@@ -37,6 +37,7 @@ public class TestListeners extends Base implements ITestListener {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println(e.getCause());
 		}
 	}
 

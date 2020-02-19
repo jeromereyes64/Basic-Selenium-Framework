@@ -50,7 +50,11 @@ public class Base {
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String fileDestination = projectDIR + "\\logs\\" + name + "_" + timeStamp +"_screenshot.png";
 		File dest = new File(fileDestination);
-		FileUtils.copyFile(src, dest);	
+		FileUtils.copyFile(src, dest);
+	}
+	
+	public void newOne(){
+		System.out.println("Test for Git");
 	}
 
 }
