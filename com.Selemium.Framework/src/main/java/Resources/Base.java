@@ -56,5 +56,10 @@ public class Base {
 	public void newOne(){
 		System.out.println("Test for Git");
 	}
+	
+	public void newTwo(){
+		System.out.println("Test for Git2");
+	}
+	
 
 }
