@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="StackOverFlowTest.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="StackOverFlowTest.LandingPageClasss"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <classes>
+      <class name="StackOverFlowTest.SampleError"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test1(failed)">
+    <classes>
+      <class name="StackOverFlowTest.LandingPageClasss">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="homePageLogin" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- StackOverFlowTest.LandingPageClasss -->
+      <class name="StackOverFlowTest.SampleError">
+        <methods>
+          <include name="quitSetup"/>
+        </methods>
+      </class> <!-- StackOverFlowTest.SampleError -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="StackOverFlowTest.LandingPageClasss">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- StackOverFlowTest.LandingPageClasss -->
+      <class name="StackOverFlowTest.SampleError">
+        <methods>
+          <include name="makeError"/>
+          <include name="quitSetup"/>
+        </methods>
+      </class> <!-- StackOverFlowTest.SampleError -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

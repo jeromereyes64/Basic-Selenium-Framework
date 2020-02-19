@@ -1,0 +1,20 @@
+package StackOverFlowTest;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import PageObjects.LoginPageObjects;
+import Resources.Base;
+
+public class LandingPageClasss extends Base {
+		
+	@Test
+	public void homePageLogin() throws IOException{
+		driver = initializeBrowser();
+		driver.get("https://www.nba.com/standings");
+		LoginPageObjects logInPageObjects = new LoginPageObjects(driver);
+		logInPageObjects.getLogInButton().click();
+	}
+	
+}

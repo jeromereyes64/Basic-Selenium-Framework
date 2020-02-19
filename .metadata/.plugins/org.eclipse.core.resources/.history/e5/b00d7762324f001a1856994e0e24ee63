@@ -1,0 +1,10 @@
+package StackOverFlowTest;
+
+import org.testng.Assert;
+
+public class SampleError {
+	
+	public void makeError(){
+		Assert.assertFalse(True);
+	}
+}

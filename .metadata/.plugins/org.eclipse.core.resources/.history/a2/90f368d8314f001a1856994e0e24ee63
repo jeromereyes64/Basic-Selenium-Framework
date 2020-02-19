@@ -1,0 +1,14 @@
+package Resources;
+
+
+
+public class TestListeners implements TestListener {
+
+
+	@Override
+	public void startTest(Test arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

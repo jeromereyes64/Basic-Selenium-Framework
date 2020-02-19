@@ -1,0 +1,23 @@
+package PageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LoginPageObjects {
+
+	private WebDriver driver;
+
+	public LoginPageObjects(WebDriver driver){
+		this.driver = driver;
+	}
+
+	By logIn_Button = By.xpath("//a[contains(text(),'Log in')]");
+
+
+
+	public WebElement getLogInButton(){
+		return driver.findElement(logIn_Button);	
+	}
+
+}

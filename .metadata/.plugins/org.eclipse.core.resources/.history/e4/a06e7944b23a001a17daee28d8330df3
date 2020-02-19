@@ -1,0 +1,18 @@
+package javatest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class seleniumBasicTest {
+	
+	 static WebDriver driver;
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chome.driver", "D:\\Selenium\\SeleniumProject\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		
+		
+	}
+	
+}

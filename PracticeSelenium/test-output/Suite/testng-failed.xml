@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="name" value="Jerome Reyes"/>
+  <parameter name="URL" value="https://rahulshettyacademy.com/AutomationPractice/"/>
+  <test thread-count="5" name="Test">
+    <parameter name="name" value="Jerome Reyes"/>
+    <classes>
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1"/>
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="name" value="Jerome Reyes"/>
+    <classes>
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1 -->
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2">
+        <methods>
+          <include name="newMethod1"/>
+          <include name="automationTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="184812" started-at="2020-02-07T05:34:35Z" finished-at="2020-02-07T05:37:40Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="184812" started-at="2020-02-07T05:34:35Z" finished-at="2020-02-07T05:37:40Z">
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2@47f6473]" name="setUp" is-config="true" duration-ms="23515" started-at="2020-02-07T13:35:29Z" finished-at="2020-02-07T13:35:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="automationTest()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2@47f6473]" name="automationTest" duration-ms="104821" started-at="2020-02-07T13:35:53Z" finished-at="2020-02-07T13:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationTest -->
+        <test-method status="PASS" signature="newMethod1()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2@47f6473]" name="newMethod1" duration-ms="1" started-at="2020-02-07T13:37:38Z" finished-at="2020-02-07T13:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newMethod1 -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2@47f6473]" name="quitBrowser" is-config="true" duration-ms="1960" started-at="2020-02-07T13:37:38Z" finished-at="2020-02-07T13:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation2 -->
+      <class name="com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1@90f6bfd]" name="setUp" is-config="true" duration-ms="34280" started-at="2020-02-07T13:34:35Z" finished-at="2020-02-07T13:35:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/AutomationPractice/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="newMethod()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1@90f6bfd]" name="newMethod" duration-ms="1" started-at="2020-02-07T13:35:09Z" finished-at="2020-02-07T13:35:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newMethod -->
+        <test-method status="PASS" signature="testAutomation1(java.lang.String)[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1@90f6bfd]" name="testAutomation1" duration-ms="17656" started-at="2020-02-07T13:35:09Z" finished-at="2020-02-07T13:35:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jerome Reyes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutomation1 -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1@90f6bfd]" name="quitBrowser" is-config="true" duration-ms="2494" started-at="2020-02-07T13:35:27Z" finished-at="2020-02-07T13:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.SeleniumBasics.Practice.PracticeSelenium.AutomationPractice1.PracticeAutomation1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,37 @@
+package Resources;
+
+import java.util.List;
+
+import org.testng.IReporter;
+import org.testng.ISuite;
+import org.testng.xml.XmlSuite;
+
+import com.aventstack.extentreports.ExtentReports;
+
+public class TestNGExtentReport implements IReporter {
+	private ExtentReports extent;
+	@Override
+	public void generateReport(List<XmlSuite> arg0, List<ISuite> arg1,
+			String arg2) {
+		// TODO Auto-generated method stub
+		  for (ISuite suite : suites) {
+	            Map result = suite.getResults();
+	            
+	            for (ISuiteResult r : result.values()) {
+	                ITestContext context = r.getTestContext();
+	                
+	                buildTestNodes(context.getFailedTests(), Status.FAIL);
+	                buildTestNodes(context.getSkippedTests(), Status.SKIP);
+	                buildTestNodes(context.getPassedTests(), Status.PASS);
+	                
+	            }
+	        }
+	        
+	        for (String s : Reporter.getOutput()) {
+	            extent.setTestRunnerOutput(s);
+	        }
+	        
+	        extent.flush();
+	}
+
+}

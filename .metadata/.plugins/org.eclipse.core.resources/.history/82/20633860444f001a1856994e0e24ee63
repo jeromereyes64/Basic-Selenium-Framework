@@ -1,0 +1,7 @@
+package Resources;
+
+import org.testng.IReporter;
+
+public class TestNGExtentReport implements IReporter {
+
+}
