@@ -74,7 +74,6 @@ INDEX VERSION 1.127+D:\Selenium\.metadata\.plugins\org.eclipse.jdt.core
 1993552937.index
 28608569.index
 3299038797.index
-571413035.index
 3422871255.index
 2749515958.index
 2661084136.index
